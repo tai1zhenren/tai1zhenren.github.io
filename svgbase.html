@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>svg base</title>
+
+</head>
+
+<body>
+<h1>一、内置图形</h1>
+<p>rect(矩形)    
+circle(圆)  
+ellipse(椭圆)   
+line(直线)   
+polyline(折线)  
+polygon(多边形)  
+path(路径) </p>
+<h1>二、内置图形的html属性或(css样式) </h1>
+<p>fill(填充颜色)   
+fill-opacity(填充透明度)
+stroke(边框颜色)   
+stroke-width(边框宽度)   
+stroke-opacity(边框透明度)   
+stroke-dasharray(创建虚线)
+transform(变换)
+filter(滤镜)(url[#滤镜id)]
+</p>
+<svg width="800" height="600">
+<rect x="0" y="0" width="100" height="100" fill="#f06"/> 
+<circle cx="200" cy="50" r="50" fill='#f06'/>      
+<ellipse cx="400" cy="50" rx="100" ry="48" 
+         style="fill:yellow;stroke:purple;stroke-width:2" />
+<line x1="0" y1="200" x2="200" y2="200"
+	stroke = "red" stroke-width="8"/>  
+<polygon points="550,10 660,100 550,90" 
+         style="fill:lime;stroke:purple;stroke-width:1" />
+<polyline points="750,0 760,40 800,50 760,60 750,100 740,60 700,50 740,40" fill='#f06'/>
+<path d="M220 220 A45 45, 0, 0, 0, 300 300" fill="green" />
+<text x="10" y="315" rotate="30" textLength="190"> Examples<tspan fill="red"> for SVG</tspa></text>
+
+</svg>
+</body>
+
+</html>
+
